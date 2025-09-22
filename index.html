@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NANDO RESTO</title>
+  <style>
+    /* ========== RESET ========== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ========== NAVBAR ========== */
+    header {
+      background: #0b67d0;
+      color: white;
+      padding: 16px 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    /* ========== HERO SECTION ========== */
+    .hero {
+      height: 90vh;
+      background: linear-gradient(rgba(11, 103, 208, 0.6), rgba(11, 103, 208, 0.6)),
+        url("file:///D:/design%20nando/jpg/bg.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero .btn {
+      background: #ffd700;
+      color: #333;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .hero .btn:hover {
+      background: #ffb700;
+    }
+
+    /* ========== ABOUT SECTION ========== */
+    .about {
+      padding: 80px 10%;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #0b67d0;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* ========== MENU SECTION ========== */
+    .menu {
+      background: #eef4fb;
+      padding: 80px 10%;
+    }
+
+    .menu h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #0b67d0;
+      margin-bottom: 50px;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .menu-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .menu-card h3 {
+      font-size: 20px;
+      margin: 16px;
+      color: #0b67d0;
+    }
+
+    .menu-card p {
+      margin: 0 16px 16px;
+      color: #555;
+    }
+
+    /* ========== FOOTER ========== */
+    footer {
+      background: #0b67d0;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <h1>NANDO RESTO</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Tentang</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div>
+      <h2>Welcome to NANDO RESTO</h2>
+      <p><strong>Makanan enak, harga bersahabat, suasana nyaman.</strong></p>
+      <a href="#menu" class="btn">Lihat Menu</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>Tentang Kami</h2>
+    <p>
+      NANDO RESTO hadir untuk memberikan pengalaman kuliner terbaik.
+      Dengan menu khas yang bervariasi, bahan segar, dan pelayanan ramah,
+      kami siap menemani setiap momen istimewa Anda.
+    </p>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <h2>Menu Favorit</h2>
+    <div class="menu-items">
+      <div class="menu-card">
+        <img id="Pizza" src="file:///D:/design%20nando/jpg/pizza.jpeg" alt="Pizza">
+        <h3>Pizza Spesial</h3>
+        <p>Pizza lezat dengan topping pilihan yang bikin nagih.</p>
+      </div>
+
+      <div class="menu-card">
+        <img id="Burger" src="file:///D:/design%20nando/jpg/burger.jpg" alt="Burger">
+        <h3>Burger Premium</h3>
+        <p>Burger juicy dengan daging premium dan saus rahasia.</p>
+      </div>
+
+      <div class="menu-card">
+         <img id="Coffe" src="file:///D:/design%20nando/jpg/latte.jpg" alt="Coffe Latte">
+        <h3>Coffe Latte</h3>
+        <p>Kopi latte creamy untuk menemani waktu santai Anda.</p>
+      </div>
+
+      <div class="menu-card">
+        <img id="Nasi Goreng Special" src="file:///D:/design%20nando/jpg/nasi%20goreng.jpg" alt="Nasi Goreng Special">
+        <h3>Nasi Goreng Special</h3>
+        <p>Nasi Goreng dengan toping Special</p>
+      </div>
+
+      <div class="menu-card">
+        <img id="Mie Goreng Special" src="file:///D:/design%20nando/jpg/mie%20goreng.jpg" alt="Mie Goreng Special">
+        <h3> Mie Goreng Special</h3>
+        <p>Mie Goreng Toping Seafood</p>
+      </div>
+
+      <div class="menu-card">
+        <img id="Spaghetti" src="file:///D:/design%20nando/jpg/spageti.jpeg" alt="Spaghetti">
+        <h3>Spaghetti Bolognese</h3>
+        <p>Spaghetti Dengan Saus Daging</p>
+      </div>
+
+        <div>
+        <h2>List Menu</h2>
+        <nav>
+         <li><a href="http://bit.ly/42AWBhc">1. Pizza Special</a></li>
+          <li><a href="http://bit.ly/3IaPXHL">2. Burger Premium</a></li>
+          <li><a href="http://bit.ly/4pHT7Uf">3. Coffe Latte</a></li>
+          <li><a href="http://bit.ly/427fLv0">4. Nasi Goreng Special</a></li>
+          <li><a href="http://bit.ly/4nmuH10>">5. Nasi Goreng Special</a></li>
+          <li><a href="http://bit.ly/3W7ZK4l">6. Spaghetti Bolognese</a></li>
+
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <p>📍 GG KRAN III DALAM NO.102 E, Jakarta | ☎ 0895-3616-13641</p>
+    <p>© 2025 NANDO RESTO. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
